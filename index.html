@@ -7,15 +7,176 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Step 3: Nesting
+        3 - In the header, use more grids to lay out the search bar, user info and buttons.
+        4 - For the main-content, use more grids to lay out the projects, announcements and trending items.
+        5 - Fill out some dummy content and placeholder images so you can position all of your grid items.
+-->
     <div class="container">
       <section class="sidebar">
-        <div>Dashboard</div>
+        <div class="sidebar-grid">
+          <h1 class="sidebar-h1">Dashboard</h1>
+          <nav class="sidebar-firstMenu">
+            <ul>
+              <li>Home</li>
+              <li>Profile</li>
+              <li>Messages</li>
+              <li>History</li>
+              <li>Tasks</li>
+              <li>Communities</li>
+            </ul>
+          </nav>
+
+          <nav class="sidebar-secondMenu">
+            <ul>
+              <li>Settings</li>
+              <li>Support</li>
+              <li>Privacy</li>
+            </ul>
+          </nav>
+        </div>
       </section>
       <header class="header">
-        <div>Morgan Oakley</div>
+        <nav class="nav-search">
+          <img src="" alt="" width="25px" height="25px" class="lens" />
+          <input type="search" />
+          <img src="" alt="" width="25px" height="25px" class="bell" />
+          <img src="" alt="" width="25px" height="25px" class="avatar" />
+          <p><a href="" class="user">Morgan Oakley</a></p>
+        </nav>
+        <nav class="nav-control">
+          <img src="" alt="" width="50px" height="50px" class="avatar2" />
+          <div class="gretings">
+            <p>Hi there,</p>
+            <p>Morgan Oakley (@morgan)</p>
+          </div>
+          <button type="submit">New</button>
+          <button type="submit">Upload</button>
+          <button type="submit">Share</button>
+        </nav>
       </header>
       <main class="main">
-        <div>Your projects</div>
+        <h2>Your Projects</h2>
+        <div class="grid-card">
+          <div class="card">
+            <p>Super Cool Project</p>
+            <p>
+              Sed tempus ut lacus ut scelertsque. Suspendisse sollicitudin nibh
+              erat, id facilisis felis accumsan nec.
+            </p>
+          </div>
+          <div class="card">
+            <p>Less Cool Project</p>
+            <p>
+              Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque
+              sed dolor tincidunt, consectetur sapien eti facilisis dolor. Duis
+              sem purus, dignissim ut sapien in, varius pellentesque lacus.
+            </p>
+          </div>
+          <div class="card">
+            <p>Impossible App</p>
+            <p>
+              In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+              placerat velit sagittis id.
+            </p>
+          </div>
+          <div class="card">
+            <p>Easy Peasy App</p>
+            <p>
+              Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
+              urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+              commodo, ac bibendum magna tincidunt.
+            </p>
+          </div>
+          <div class="card">
+            <p>Ad Blocker</p>
+            <p>
+              Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel,
+              pharetra hendrerit felis. Aliquam sed malesuada eros.
+            </p>
+          </div>
+          <div class="card">
+            <p>Money Maker</p>
+            <p>
+              Praesent convallis, libero quis congue elementum, nunc ante
+              faucibus sapien, ac scelerisque tortor purus sit amet ex.
+              Pellentesque mollis nec sem vel aliquam.
+            </p>
+          </div>
+        </div>
+        <div class="sidebar-main">
+          <div class="announcements">
+            <h2>Announcements</h2>
+            <div class="card1">
+              <p>Site Maintainance</p>
+              <p>
+                Vestibulum cond.rnentum tellus locus. I n accumsan elit maximus
+                ac. Donec hendrerit sodales congue...
+              </p>
+            </div>
+            <div class="card2">
+              <p>Community Share Day</p>
+              <p>
+                Nam vel lectus tincldunt, rutrum nulla eu, ornare libero. Ahquam
+                dictum accumsan porttitor...
+              </p>
+            </div>
+            <div class="card3">
+              <p>Updated Privacy Policy</p>
+              <p>
+                pnasellus efficitur nisi eget elit tonsectetur, eqet condimentum
+                ante auctor. Cras fringilla sagittis sem in mattis...
+              </p>
+            </div>
+          </div>
+          <div class="trending">
+            <h2>Trending</h2>
+            <div class="username1">
+              <img
+                src=""
+                alt=""
+                class="avatar-trending"
+                width="25px"
+                height="25px"
+              />
+              <p class="username-trending">@sheldonopolis</p>
+              <p class="name-trending">Sheldon Cooper</p>
+            </div>
+            <div class="username2">
+              <img
+                src=""
+                alt=""
+                class="avatar-trending"
+                width="25px"
+                height="25px"
+              />
+              <p class="username-trending">@sheldonopolis</p>
+              <p class="name-trending">Sheldon Cooper</p>
+            </div>
+            <div class="username3">
+              <img
+                src=""
+                alt=""
+                class="avatar-trending"
+                width="25px"
+                height="25px"
+              />
+              <p class="username-trending">@sheldonopolis</p>
+              <p class="name-trending">Sheldon Cooper</p>
+            </div>
+            <div class="username4">
+              <img
+                src=""
+                alt=""
+                class="avatar-trending"
+                width="25px"
+                height="25px"
+              />
+              <p class="username-trending">@sheldonopolis</p>
+              <p class="name-trending">Sheldon Cooper</p>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
