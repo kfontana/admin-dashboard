@@ -5,32 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Step 3: Nesting
-        3 - In the header, use more grids to lay out the search bar, user info and buttons.
-        4 - For the main-content, use more grids to lay out the projects, announcements and trending items.
-        5 - Fill out some dummy content and placeholder images so you can position all of your grid items.
--->
     <div class="container">
       <section class="sidebar">
         <div class="sidebar-grid">
-          <h1 class="sidebar-h1">Dashboard</h1>
+          <div class="title-sidebar">
+            <div class="square">
+              <div class="square-one"></div>
+              <div class="square-two"></div>
+              <div class="square-three"></div>
+              <div class="square-four"></div>
+            </div>
+            <h1 class="sidebar-h1">Dashboard</h1>
+          </div>
           <nav class="sidebar-firstMenu">
-            <ul>
+            <ul class="grid-ul-sidebar">
+              <img src="assets/home.svg" class="home-svg" width="20px" />
               <li>Home</li>
+              <img src="assets/card-account-details-outline.svg" width="20px" />
               <li>Profile</li>
+              <img src="assets/message.svg" width="20px" />
               <li>Messages</li>
+              <img src="assets/clock-time-three.svg" width="20px" />
               <li>History</li>
+              <img src="assets/note-multiple.svg" width="20px" />
               <li>Tasks</li>
+              <img src="assets/account-group.svg" width="20px" />
               <li>Communities</li>
             </ul>
           </nav>
 
           <nav class="sidebar-secondMenu">
-            <ul>
+            <ul class="grid-ul-sidebar">
+              <img src="assets/cog.svg" width="20px" />
               <li>Settings</li>
+              <img src="assets/help-box.svg" width="20px" />
               <li>Support</li>
+              <img src="assets/shield-check.svg" width="20px" />
               <li>Privacy</li>
             </ul>
           </nav>
@@ -38,142 +56,226 @@
       </section>
       <header class="header">
         <nav class="nav-search">
-          <img src="" alt="" width="25px" height="25px" class="lens" />
+          <img
+            src="assets/magnify.svg"
+            alt=""
+            width="25px"
+            height="25px"
+            class="lens"
+          />
           <input type="search" />
-          <img src="" alt="" width="25px" height="25px" class="bell" />
-          <img src="" alt="" width="25px" height="25px" class="avatar" />
-          <p><a href="" class="user">Morgan Oakley</a></p>
+          <div class="nav-avatar">
+            <img
+              src="assets/bell-ring-outline.svg"
+              alt=""
+              width="25px"
+              height="25px"
+              class="bell"
+            />
+            <img
+              src="assets/luffy.jpg"
+              alt=""
+              width="45px"
+              height="45px"
+              class="avatar"
+            />
+            <p><a href="" class="user">Morgan Oakley</a></p>
+          </div>
         </nav>
         <nav class="nav-control">
-          <img src="" alt="" width="50px" height="50px" class="avatar2" />
-          <div class="gretings">
-            <p>Hi there,</p>
-            <p>Morgan Oakley (@morgan)</p>
+          <img
+            src="assets/luffy.jpg"
+            alt=""
+            width="70px"
+            height="70px"
+            class="avatar2"
+          />
+          <div class="greetings">
+            <p class="para-1">Hi there,</p>
+            <p class="para-2">Morgan Oakley (@morgan)</p>
           </div>
-          <button type="submit">New</button>
-          <button type="submit">Upload</button>
-          <button type="submit">Share</button>
+          <button type="submit" class="btn-submit">New</button>
+          <button type="submit" class="btn-submit">Upload</button>
+          <button type="submit" class="btn-submit">Share</button>
         </nav>
       </header>
       <main class="main">
         <h2>Your Projects</h2>
         <div class="grid-card">
           <div class="card">
-            <p>Super Cool Project</p>
-            <p>
+            <p class="title-p">Super Cool Project</p>
+            <p class="card-p">
               Sed tempus ut lacus ut scelertsque. Suspendisse sollicitudin nibh
               erat, id facilisis felis accumsan nec.
             </p>
+            <nav class="nav-card-grid">
+              <a href="#"
+                ><img src="assets/star-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"
+                ><img src="assets/eye-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"><img src="assets/source-fork.svg" width="25px" /></a>
+            </nav>
           </div>
           <div class="card">
-            <p>Less Cool Project</p>
-            <p>
+            <p class="title-p">Less Cool Project</p>
+            <p class="card-p">
               Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque
               sed dolor tincidunt, consectetur sapien eti facilisis dolor. Duis
               sem purus, dignissim ut sapien in, varius pellentesque lacus.
             </p>
+            <nav class="nav-card-grid">
+              <a href="#"
+                ><img src="assets/star-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"
+                ><img src="assets/eye-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"><img src="assets/source-fork.svg" width="25px" /></a>
+            </nav>
           </div>
           <div class="card">
-            <p>Impossible App</p>
-            <p>
+            <p class="title-p">Impossible App</p>
+            <p class="card-p">
               In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
               placerat velit sagittis id.
             </p>
+            <nav class="nav-card-grid">
+              <a href="#"
+                ><img src="assets/star-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"
+                ><img src="assets/eye-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"><img src="assets/source-fork.svg" width="25px" /></a>
+            </nav>
           </div>
           <div class="card">
-            <p>Easy Peasy App</p>
-            <p>
+            <p class="title-p">Easy Peasy App</p>
+            <p class="card-p">
               Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
               urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
               commodo, ac bibendum magna tincidunt.
             </p>
+            <nav class="nav-card-grid">
+              <a href="#"
+                ><img src="assets/star-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"
+                ><img src="assets/eye-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"><img src="assets/source-fork.svg" width="25px" /></a>
+            </nav>
           </div>
           <div class="card">
-            <p>Ad Blocker</p>
-            <p>
+            <p class="title-p">Ad Blocker</p>
+            <p class="card-p">
               Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel,
               pharetra hendrerit felis. Aliquam sed malesuada eros.
             </p>
+            <nav class="nav-card-grid">
+              <a href="#"
+                ><img src="assets/star-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"
+                ><img src="assets/eye-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"><img src="assets/source-fork.svg" width="25px" /></a>
+            </nav>
           </div>
           <div class="card">
-            <p>Money Maker</p>
-            <p>
+            <p class="title-p">Money Maker</p>
+            <p class="card-p">
               Praesent convallis, libero quis congue elementum, nunc ante
               faucibus sapien, ac scelerisque tortor purus sit amet ex.
               Pellentesque mollis nec sem vel aliquam.
             </p>
+            <nav class="nav-card-grid">
+              <a href="#"
+                ><img src="assets/star-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"
+                ><img src="assets/eye-plus-outline.svg" width="25px"
+              /></a>
+              <a href="#"><img src="assets/source-fork.svg" width="25px" /></a>
+            </nav>
           </div>
         </div>
-        <div class="sidebar-main">
-          <div class="announcements">
-            <h2>Announcements</h2>
+        <h2>Announcements</h2>
+        <div class="announcements">
+          <div class="background-announcements">
             <div class="card1">
-              <p>Site Maintainance</p>
-              <p>
+              <p class="title-p">Site Maintainance</p>
+              <p class="para-p">
                 Vestibulum cond.rnentum tellus locus. I n accumsan elit maximus
                 ac. Donec hendrerit sodales congue...
               </p>
             </div>
+            <div class="line"></div>
             <div class="card2">
-              <p>Community Share Day</p>
-              <p>
+              <p class="title-p">Community Share Day</p>
+              <p class="para-p">
                 Nam vel lectus tincldunt, rutrum nulla eu, ornare libero. Ahquam
                 dictum accumsan porttitor...
               </p>
             </div>
+            <div class="line"></div>
             <div class="card3">
-              <p>Updated Privacy Policy</p>
-              <p>
+              <p class="title-p">Updated Privacy Policy</p>
+              <p class="para-p">
                 pnasellus efficitur nisi eget elit tonsectetur, eqet condimentum
                 ante auctor. Cras fringilla sagittis sem in mattis...
               </p>
             </div>
           </div>
-          <div class="trending">
-            <h2>Trending</h2>
+        </div>
+        <h2 class="h2-trending">Trending</h2>
+        <div class="trending">
+          <div class="background-trending">
             <div class="username1">
               <img
-                src=""
+                src="assets/bazinga.jpg"
                 alt=""
                 class="avatar-trending"
-                width="25px"
-                height="25px"
+                width="50px"
+                height="50px"
               />
               <p class="username-trending">@sheldonopolis</p>
               <p class="name-trending">Sheldon Cooper</p>
             </div>
             <div class="username2">
               <img
-                src=""
+                src="assets/luffy.jpg"
                 alt=""
                 class="avatar-trending"
-                width="25px"
-                height="25px"
+                width="50px"
+                height="50px"
               />
-              <p class="username-trending">@sheldonopolis</p>
-              <p class="name-trending">Sheldon Cooper</p>
+              <p class="username-trending">@morgan-oakley</p>
+              <p class="name-trending">Morgan Oakley</p>
             </div>
             <div class="username3">
               <img
-                src=""
+                src="assets/prison-mike.jpg"
                 alt=""
                 class="avatar-trending"
-                width="25px"
-                height="25px"
+                width="50px"
+                height="50px"
               />
-              <p class="username-trending">@sheldonopolis</p>
-              <p class="name-trending">Sheldon Cooper</p>
+              <p class="username-trending">@prison-mike</p>
+              <p class="name-trending">Michael Scott</p>
             </div>
             <div class="username4">
               <img
-                src=""
+                src="assets/thor.jpg"
                 alt=""
                 class="avatar-trending"
-                width="25px"
-                height="25px"
+                width="50px"
+                height="50px"
               />
-              <p class="username-trending">@sheldonopolis</p>
-              <p class="name-trending">Sheldon Cooper</p>
+              <p class="username-trending">@god-of-hammer</p>
+              <p class="name-trending">Thor Odinson</p>
             </div>
           </div>
         </div>

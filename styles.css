@@ -1,13 +1,18 @@
 body {
-  height: 100vh;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 420;
 }
 
 .container {
-  height: 100%;
+  height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr 3fr;
 }
 
@@ -17,25 +22,97 @@ body {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   color: white;
+  justify-content: center;
+}
+
+.title-sidebar {
+  display: grid;
+  grid-template-columns: 20% 2fr;
+}
+
+.title-sidebar > div {
+  align-self: center;
+  margin: auto;
+}
+
+.sidebar-h1 {
+  font-size: 2rem;
+  margin-left: 5%;
+}
+
+.grid-ul-sidebar > li {
+  padding: 0px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.grid-ul-sidebar > img {
+  align-self: center;
+  margin: auto;
 }
 
 .sidebar-grid {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 10% 2fr;
-  grid-template-rows: 10% 1fr 1fr;
+  gap: 10px;
+  min-width: 250px;
 }
 
-.sidebar-h1 {
-  grid-column: 2;
+.grid-ul-sidebar {
+  display: grid;
+  grid-template-columns: 20% 2fr;
+  gap: 10px;
+  row-gap: 20px;
 }
 
-.sidebar-firstMenu {
-  grid-column: 2;
+.square {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.sidebar-secondMenu {
+.square-one {
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+  background-color: white;
+  width: 18px;
+  height: 25px;
+}
+
+.square-two {
+  grid-column: 1 / 1;
+  grid-row: 4 / 2;
+  align-self: end;
+  background-color: white;
+  width: 18px;
+  height: 11px;
+}
+
+.square-three {
   grid-column: 2;
+  grid-row: 1;
+  background-color: white;
+  width: 18px;
+  height: 11px;
+  justify-self: right;
+}
+
+.square-four {
+  align-self: end;
+  grid-column: 2;
+  grid-row: 4 / 2;
+  justify-self: right;
+  background-color: white;
+  width: 18px;
+  height: 25px;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -44,62 +121,275 @@ ul {
 }
 
 .header {
+  background-color: white;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 0px 0px 10px 0px #939393;
+  position: relative;
+}
+
+.btn-submit {
+  align-self: center;
+  height: 40px;
+  width: 100px;
+  background-color: #1992d4;
+  border-radius: 25px;
+  border: 0px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  justify-self: center;
+}
+
+input {
+  height: 30px;
+  width: 100%;
+  align-items: center;
+  border-radius: 25px;
+  border: 0px;
+  background-color: #e3e8f0;
 }
 
 .nav-search {
   display: grid;
-  grid-template-columns: 10% 1fr 10% 10% 20%;
-  background-color: aliceblue;
+  grid-template-columns: 0% 1fr 30%;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 80px 10px 80px;
+}
+
+.lens {
+  justify-self: right;
+}
+
+.nav-avatar {
+  grid-column: 3 / span 2;
+  display: grid;
+  grid-auto-flow: column;
+  align-self: center;
+  justify-content: right;
+  gap: 20px;
+}
+
+.bell {
+  align-self: center;
+}
+
+.avatar {
+  align-self: center;
+}
+
+.user {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .nav-control {
   display: grid;
-  grid-template-columns: 10% 1fr 10% 10% 10%;
-  background-color: aliceblue;
+  grid-template-columns: 8% 1fr 10% 10% 10%;
+  gap: 5px;
+  padding: 10px;
+}
+
+.nav-control > img {
+  align-self: center;
+  margin-left: auto;
+}
+
+.avatar2,
+.avatar {
+  border-radius: 50%;
+}
+
+.greetings {
+  align-self: center;
+}
+
+.greetings > p {
+  font-weight: bold;
+  padding: 4px;
+}
+
+.para-1 {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.para-2 {
+  font-size: 1.3rem;
+  margin: 0;
 }
 
 .main {
-  background-color: lightgray;
+  background-color: #e2e8f0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10% 1fr;
+  grid-template-columns: 2fr 20%;
+  grid-template-rows: 2% 1fr 2% 1fr;
+  padding: 20px 30px 50px 30px;
+  row-gap: 30px;
 }
 
 .card {
-  width: 300px;
-  height: 150px;
   background-color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
-.grid-card {
-  grid-row: 2;
+.card-p {
+  color: #939393;
+  margin: 0;
+}
+
+.nav-card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  justify-content: end;
   gap: 20px;
 }
 
-.sidebar-main {
-  grid-row: 1 / 4;
+.nav-card-grid > a {
+  align-self: end;
+}
+
+.title-p {
+  font-weight: bold;
+}
+
+.grid-card {
+  grid-row: 2 / span 3;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
+  gap: 40px;
+}
+
+.card {
+  border-left: #f0b429 8px solid;
+  border-radius: 10px;
+  box-shadow: 7px 9px 5px 0px #c5c4c4;
 }
 
 .announcements {
   display: grid;
-  padding: 20px;
-  gap: 10px;
+  gap: 40px;
+  font-size: 14px;
+  grid-row: 2 / span 1;
 }
 
 .announcements > div {
+  padding: 20px 20px;
+}
+
+.para-p {
+  color: #939393;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #e0dcdc;
+}
+
+.background-announcements {
   background-color: white;
+  border-radius: 10px;
+  box-shadow: 7px 9px 5px 0px #c5c4c4;
 }
 
 .trending {
   display: grid;
-  padding: 20px;
+  grid-row: 3;
+  grid-template-columns: 1fr 1fr;
+  font-size: 14px;
 }
 
-.trending > div {
+.background-trending {
+  box-shadow: 7px 9px 5px 0px #c5c4c4;
   background-color: white;
+  border-radius: 10px;
+  grid-column: span 2;
+  display: grid;
+  justify-content: center;
+}
+
+.h2-trending {
+  grid-column: 2;
+}
+
+.trending {
+  display: grid;
+  gap: 40px;
+  font-size: 14px;
+  grid-row: 4;
+}
+
+.name-trending,
+.username-trending {
+  margin: 0;
+}
+
+.username1,
+.username2,
+.username3,
+.username4 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  align-content: center;
+}
+
+.username1 > p {
+  justify-self: left;
+  margin-left: 10%;
+}
+
+.username1 > img {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  justify-self: right;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.username2 > img {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  justify-self: right;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.username2 > p {
+  justify-self: left;
+  margin-left: 10%;
+}
+
+.username3 > img {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  justify-self: right;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.username3 > p {
+  justify-self: left;
+  margin-left: 10%;
+}
+
+.username4 > img {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  justify-self: right;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.username4 > p {
+  justify-self: left;
+  margin-left: 10%;
+}
+
+.name-trending {
+  color: #939393;
 }
